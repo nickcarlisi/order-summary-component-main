@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --activeStateBlue: hsl(244, 82%, 68%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Red Hat Display";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("images/pattern-background-mobile.svg");
+
+  /* Full height */
+  height: 100%;
+  width: 100%;
+  /* Center and scale the image nicely */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20px;
+  width: 350px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+.summary {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--desaturatedBlue);
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.card .hero-img {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  background-color: var(--veryPaleBlue);
+  width: 90%;
+}
+
+.annual {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #000;
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--desaturatedBlue);
+}
+
+.change {
+  font-weight: 700;
+  color: var(--brightBlue);
+}
+
+.change:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--activeStateBlue);
+}
+
+.btn {
+  background-color: var(--brightBlue);
+  color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  border-radius: 15px;
+  width: 90%;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.btn:hover {
+  background-color: var(--activeStateBlue);
+  cursor: pointer;
+}
+
+.cancel {
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--desaturatedBlue);
+}
+
+.cancel:hover {
+  color: #000;
+  cursor: pointer;
+}
